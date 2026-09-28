@@ -1,0 +1,102 @@
+{
+  "_note": "Baseline hero layout spec for Srivai Dental Clinic. Update this file (and style.css / index.html) once the client's reference hero image is supplied — it documents composition, hierarchy and card placement only. No third-party logos or copy are reproduced.",
+  "section": "hero",
+  "file": "index.html (#home)",
+  "layout": {
+    "type": "split-screen",
+    "content_alignment": "left",
+    "visual_alignment": "right",
+    "stack_breakpoint": "900px (single column below)",
+    "container_max_width": "1200px"
+  },
+  "background": {
+    "primary": "#050414",
+    "secondary": "#123962",
+    "accent": "#F9AB00",
+    "treatment": "Two blurred radial orbs (navy top-right, gold bottom-left) + faint 70px grid masked with a radial gradient + oversized outline tooth, bottom-right."
+  },
+  "content": {
+    "eyebrow": "5.0 Rated Dental Clinic",
+    "heading": "Confident Smiles Begin With Better Dental Care",
+    "heading_emphasis": {
+      "text": "Better Dental Care",
+      "style": "gold gradient text (#FFD071 -> #F9AB00)"
+    },
+    "description": "Quality dental care with a friendly approach, clear treatment guidance and a comfortable patient experience in Srivaikuntam.",
+    "primary_cta": {
+      "label": "Book Your Appointment",
+      "href": "https://wa.me/918344078888?text=Hi%20Srivai%20Dental%20Clinic%2C%20I%20would%20like%20to%20book%20a%20dental%20consultation.",
+      "style": "gold gradient pill, 56px height"
+    },
+    "secondary_cta": {
+      "label": "Call 083440 78888",
+      "href": "tel:+918344078888",
+      "style": "glass outline pill on dark, 56px height"
+    },
+    "trust_statement": "Trusted by patients in Srivaikuntam",
+    "type_scale": "h1 clamp(2.05rem, 7.2vw, 3.75rem) / 1.08 / 800 / -0.025em"
+  },
+  "visual": {
+    "type": "dental_clinic_image",
+    "source": "replaceable_placeholder",
+    "file": "assets/hero.jpg",
+    "replacement_instruction": "Overwrite assets/hero.jpg (keep the name) or change the src in index.html. Nothing is hard-coded in CSS or JS.",
+    "position": "right",
+    "max_width": "480px",
+    "shape": "rounded",
+    "radius": "34px",
+    "aspect_ratio": "4 / 5",
+    "fit": "cover",
+    "object_position": "52% 28%",
+    "frame": "1px rgba(255,255,255,.16) border, 1px gold offset outline (inset 38px -12px -14px 34px)",
+    "decoration": "Dashed circle ring behind the top-right corner (74% width)."
+  },
+  "floating_elements": [
+    {
+      "type": "rating",
+      "content": "5.0 Google Rating / 20+ Reviews",
+      "position": "top-left",
+      "css": "top 8%, left 0",
+      "z_index": 3,
+      "float_animation": "7.5s ease-in-out"
+    },
+    {
+      "type": "testimonial",
+      "content": "Good quality treatment in affordable prices. — Patient Review",
+      "position": "bottom-left",
+      "css": "bottom 10%, left -6px (left -26px at >=1024px), width min(272px, 58%)",
+      "float_animation": "9s ease-in-out, -2s delay"
+    },
+    {
+      "type": "trust_badge",
+      "content": "✓ Friendly Care / ✓ Clear Treatment Guidance",
+      "position": "right-middle",
+      "css": "top 38%, right -10px (right -24px at >=1024px)",
+      "float_animation": "8.2s ease-in-out, -4s delay"
+    }
+  ],
+  "floating_card_style": {
+    "background": "rgba(255,255,255,.93)",
+    "backdrop_filter": "blur(14px)",
+    "border": "1px solid rgba(255,255,255,.7)",
+    "radius": "18px",
+    "shadow": "0 20px 44px -22px rgba(5,4,20,.75)",
+    "star_color": "#F9AB00"
+  },
+  "mobile_behaviour": {
+    "breakpoint": "900px",
+    "rules": [
+      "Hero stacks: content first, visual second.",
+      "Image frame keeps 4/5 aspect, visual capped at 400px wide (460px from 640px).",
+      "Rating badge stays anchored top-left of the image at reduced size.",
+      "Testimonial and trust cards leave the absolute flow and stack under the image at full width — no overlap of readable content.",
+      "Floating animation is disabled below 900px."
+    ]
+  },
+  "accessibility": {
+    "heading_level": "h1",
+    "alt_text": "A patient receiving a friendly dental check-up at Srivai Dental Clinic in Srivaikuntam",
+    "decorative_layers": "hero-bg orbs, grid, tooth outline and floating rings are aria-hidden",
+    "cta_links": "tel: and https://wa.me/ links with descriptive text"
+  }
+}
