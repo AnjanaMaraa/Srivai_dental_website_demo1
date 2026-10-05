@@ -1,5 +1,5 @@
 {
-  "_note": "Baseline hero layout spec for Srivai Dental Clinic. Update this file (and style.css / index.html) once the client's reference hero image is supplied — it documents composition, hierarchy and card placement only. No third-party logos or copy are reproduced.",
+  "_note": "Baseline hero layout spec for DigiMaraa Dental Clinic. Update this file (and style.css / index.html) once the client's reference hero image is supplied — it documents composition, hierarchy and card placement only. No third-party logos or copy are reproduced.",
   "section": "hero",
   "file": "index.html (#home)",
   "layout": {
@@ -25,12 +25,12 @@
     "description": "Quality dental care with a friendly approach, clear treatment guidance and a comfortable patient experience in Srivaikuntam.",
     "primary_cta": {
       "label": "Book Your Appointment",
-      "href": "https://wa.me/918344078888?text=Hi%20Srivai%20Dental%20Clinic%2C%20I%20would%20like%20to%20book%20a%20dental%20consultation.",
+      "href": "https://wa.me/917200251560?text=Hi%20DigiMaraa%20Dental%20Clinic%2C%20I%20would%20like%20to%20book%20a%20dental%20consultation.",
       "style": "gold gradient pill, 56px height"
     },
     "secondary_cta": {
-      "label": "Call 083440 78888",
-      "href": "tel:+918344078888",
+      "label": "Call +91 72002 51560",
+      "href": "tel:+917200251560",
       "style": "glass outline pill on dark, 56px height"
     },
     "trust_statement": "Trusted by patients in Srivaikuntam",
@@ -95,7 +95,7 @@
   },
   "accessibility": {
     "heading_level": "h1",
-    "alt_text": "A patient receiving a friendly dental check-up at Srivai Dental Clinic in Srivaikuntam",
+    "alt_text": "A patient receiving a friendly dental check-up at DigiMaraa Dental Clinic in Srivaikuntam",
     "decorative_layers": "hero-bg orbs, grid, tooth outline and floating rings are aria-hidden",
     "cta_links": "tel: and https://wa.me/ links with descriptive text"
   }

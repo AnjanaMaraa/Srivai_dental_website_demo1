@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SRIVAI DENTAL CLINIC — script.js
+   DIGIMARAA DENTAL CLINIC — script.js
    Vanilla JS, no dependencies. Edit the CLINIC object to change the
    phone number, WhatsApp link or default enquiry message.
    ========================================================================== */
@@ -10,10 +10,10 @@
      1. CLINIC SETTINGS  (edit here)
      ------------------------------------------------------------------ */
   var CLINIC = {
-    phoneDisplay: '083440 78888',
-    phoneDial: '+918344078888',          // used for tel: links
-    whatsapp: 'https://wa.me/918344078888', // used for wa.me links
-    defaultMessage: 'Hi Srivai Dental Clinic, I would like to book a dental consultation.'
+    phoneDisplay: '+91 72002 51560',
+    phoneDial: '+917200251560',          // used for tel: links
+    whatsapp: 'https://wa.me/917200251560', // used for wa.me links
+    defaultMessage: 'Hi DigiMaraa Dental Clinic, I would like to book a dental consultation.'
   };
 
   /* Reusable WhatsApp link builder. */
@@ -284,5 +284,5 @@
   }
 
   /* Expose the helper so extra buttons can be added from the console. */
-  window.SrivaiDental = { waLink: waLink, clinic: CLINIC };
+  window.DigiMaraaDental = { waLink: waLink, clinic: CLINIC };
 })();

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SRIVAI DENTAL CLINIC — style.css
+   DIGIMARAA DENTAL CLINIC — style.css
    Mobile-first, no frameworks. Sections:
    1. Tokens          6. Hero            11. Featured testimonial
    2. Reset/base      7. Trust strip     12. Testimonials
@@ -739,6 +739,8 @@ body.nav-open .nav-toggle .icon-close{ display:block; }
   display:inline-block; margin-top:14px;
   color:var(--gold); font-weight:800; font-size:1.25rem; letter-spacing:.01em;
 }
+.footer-contact a[href^="mailto:"]{ color:var(--gold); }
+.footer-contact a[href^="mailto:"]:hover{ color:#fff; }
 .footer-cta-col p{ font-size:.95rem; margin-bottom:18px; }
 
 .footer-bottom{ border-top:1px solid rgba(255,255,255,.1); }
